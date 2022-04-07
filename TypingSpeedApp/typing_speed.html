@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Application</title>
+    <link rel="stylesheet" href="typing_game_styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>Test your Typing Speed</h1>
+        </div>
+        <div class="attributes">
+            <div class="wpm">
+                <div class="text">WPM</div>
+                <div class="wpm_val">80</div>
+            </div>
+            <div class="cpm">
+                <div class="text">CPM</div>
+                <div class="cpm_val">80</div>
+
+            </div>
+            <div class="errors">
+                <div class="text">Errors</div>
+                <div class="error_val">0</div>
+            </div>
+            <div class="time">
+                <div class="text">Time</div>
+                <div class="timer_val">60</div>
+            </div>
+            <div class="accuracy">
+                <div class="text">Accuracy</div>
+                <div class="accuracy_val">100</div>
+            </div>
+        </div>
+        <div class="quote">
+            Click on the area below to start the game.
+        </div>
+        <textarea class="quote_input" placeholder="start typing here..." oninput="processInputText()"
+            onfocus="startGame()">
+    </textarea>
+        <button class="restart_btn" onclick="restart()">
+            Restart
+        </button>
+    </div>
+
+    <script src="typing_game.js"></script>
+</body>
+
+</html>

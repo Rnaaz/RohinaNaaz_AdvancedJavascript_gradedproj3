@@ -1,0 +1,114 @@
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+    color     : #000000;
+}
+
+body {
+    text-align: center;
+    background-color: rgb(241, 241, 228);
+}
+
+.container {
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+    margin-top    : 50px;
+}
+
+.heading {
+    color: black;
+}
+
+.attributes {
+    display    : flex;
+    align-items: center;
+
+}
+
+.heading,
+.attributes,
+.quote {
+    margin-bottom: 12px;
+}
+
+.wpm,
+.cpm,
+.errors,
+.accuracy,
+.time {
+    margin            : 12px;
+    display           : flex;
+    flex-direction    : column;
+    background-color  : #c3d147;
+    padding           : 10px 0;
+    border-radius     : 20%;
+    width             : 60px;
+    height            : 60px;
+    /* justify-content: flex-start; */
+    box-shadow        : #000000 5px 6px 5px;
+}
+
+.cpm,
+.wpm {
+    display: none;
+}
+
+.text {
+    font-size     : 0.5rem;
+    text-transform: uppercase;
+    font-weight   : 600;
+}
+
+.wpm_val,
+.cpm_val,
+.error_val,
+.timer_val,
+.accuracy_val {
+    font-size: 1.6rem;
+}
+
+.quote {
+    background-color: #c3d147;
+    padding         : 15px;
+    box-shadow      : #000000 5px 6px 5px;
+    padding         : 20px;
+    font-size       : 1.3rem;
+}
+
+.quote_input {
+    background-color: #ebefc2;
+    box-shadow      : #000000 5px 6px 5px;
+    width           : 55%;
+    margin          : 15px;
+    height          : 60px;
+    font-size       : 1.3rem;
+    font-weight     : 600;
+    padding         : 20px;
+    outline         : none;
+}
+
+.quote_input:focus {
+    border: 2px solid black;
+}
+
+.restart_btn {
+    display         : none;
+    margin          : 10px;
+    background-color: #407d7a;
+    font-size       : 1.3rem;
+    padding         : 12px;
+    border          : 0px;
+    box-shadow      : black 5px 8px 5px;
+    cursor          : pointer;
+}
+
+.incorrect_char {
+    color          : red;
+    text-decoration: underline;
+}
+
+.correct_char {
+    color: darkgreen;
+}
