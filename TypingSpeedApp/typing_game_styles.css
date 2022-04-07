@@ -66,10 +66,7 @@ body {
 .error_val,
 .timer_val,
 .accuracy_val {
-    font-size: 1.7rem;
-}
-
-.accuracy_val {
+    font-size  : 1.7rem;
     padding-top: 2px;
 }
 
